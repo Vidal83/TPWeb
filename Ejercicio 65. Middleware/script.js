@@ -8,6 +8,7 @@ MIDDLEWARE:  es una forma de filtrar una solicitud y una respuesta en una aplica
 */
 
 // 1- SE NECESITA el módulo "connect" para hacer un Middleware --> INstalarlo !!!
+// ESTO ES UN TEXTO DE PRUEBA PARA EL COMMIT DE GITHUB.
 
 var connect = require("connect"),
   http = require("http");
