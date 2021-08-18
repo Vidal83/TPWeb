@@ -1,0 +1,76 @@
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="row">
+        <div class="col-lg-12 offset-lg-3">
+            <div class="card">
+                <div class="card-body text-center">
+                    <span>Listado de bandas</span>
+                    <button type="submit" class="btn btn-success float-end"><a
+                            href="/listar">Bandas</a>
+                    </button>
+                    <table *ngIf='listBandas.length > 0' class="table table-striped mt-4">
+                        <thead>
+                            <tr>
+                                <th scope="col">Banda</th>
+                                <th scope="col">Estilo</th>
+                                <th scope="col">Nº Integrantes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor='let banda of listBandas'>
+                                <td>{{banda.nombre}}</td>
+                                <td>{{banda.estilo}}</td>
+                                <td>{{banda.miembros}}</td>
+                                <td>
+
+                                    <i (click)='eliminarBanda(banda._id)'
+                                        class="fas fa-trash-alt text-danger"></i>
+                                </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5 style="text-align: start; margin-top: 10px;" *ngIf='listBandas.length == 0'>
+                        No hay bandas para mostrar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="crear container mt-5">
+    <div class="row">
+        <div col-lg-6 offset-lg-3>
+            <div class="card">
+                <div class="card-body text-center">
+                    <span class="titulo">Crear Banda</span>
+                    <form class="mt-3" [formGroup]="bandaForm" (ngSubmit)="agregarBanda()">
+                        <div class="mb-3">
+                            <input type="text" formControlName="nombre"
+                                class="form-control form-control-lg" placeholder="Nombre">
+                            <span class="alert-danger">{{ verError('nombre')}}</span><br>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" formControlName="estilo"
+                                class="form-control form-control-lg" placeholder="Estilo">
+                            <span class="alert-danger">{{ verError('estilo')}}</span><br>
+                        </div>
+                        <div class="mb-3">
+                            <input type="number" formControlName="miembros"
+                                class="form-control form-control-lg" placeholder="Nº Integrantes">
+                            <span class="alert-danger">{{ verError('miembros')}}</span>
+                        </div>
+                        <div class="mb-3">
+                            <button class="btn btn-warning btn-lg float-start"><a class="btn-lg"
+                                    href="/">Volver</a></button>
+                            <button type="submit"
+                                class="btn btn-success btn-lg float-end">Aceptar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>

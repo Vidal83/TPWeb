@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor container-fluid">
+        <h2 class="titulo2 container-fluid"> Biografía
+        </h2>
+        <article>
+            <p class="txtAsoc container-fluid">Tres de los integrantes eran miembros de la banda de
+                heavy/rock malagueña HaVen
+                (2013-16). De las cenizas de esta banda Fran, Vidal y Esteban continuaron
+                componiendo y grabando temas, a esperas de encontrar un batería. Después de varios
+                intentos, y gracias a ser socios de la "Asociación de Músicos de Benalmádena (Sol y
+                Música)", conocieron a Juan Luis Guerrero, ex batería de la banda local
+                "Preventivos" y
+                también actual miembro de "Avería", el cual se adaptó perfectamente al estilo y
+                necesidades de la banda, para empezar a ensayar constantemente y trabajar un
+                repertorio.
+                En febrero de 2021 Milk-Wookie sacan su primer EP llamado "EPisodio I", totalmente
+                autograbado, mezclado y producido por los integrantes de la banda. El EP lo componen
+                cuatro temas propios y una versión. Su estilo se podría considerar "rock espacial"
+                con
+                toques progresivos, mezclando lo clásico con lo contemporáneo. </p>
+
+        </article>
+        <br><br>
+        <div class="banda">
+            <ul>
+                <h4>Componentes:</h4>
+                <li>Guitarras: Francisco Julián González <i class="fas fa-guitar fa-2x m-2"></i>
+                </li>
+
+                <li>Batería: Juan Luis Guerrero Rivero <i class="fas fa-drum fa-2x m-2"></i></li>
+                <li>Bajo y coros: Esteban Somosierra Fernández <img class="bajo"
+                        src="https://img.icons8.com/ios/50/000000/guitar-strings.png" /></li>
+                <li>Guitarra acústica, teclados y voz: Vidal Fernández Garrido <img class="piano"
+                        src="https://img.icons8.com/ios-filled/50/000000/piano.png" />
+                </li>
+            </ul>
+            <img class="foto" src="../../../assets/logo/STURDIES.jpg" alt="">
+        </div>
+        <br><br><br>
+        <h2>Escucha la música de Milkwookie</h2>
+        <br>
+        <div class="reproductor container">
+
+            <h3>EP Oficial: <i> EPisodio I </i></h3>
+            <div class="lista_canciones">
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> Island</i></span></p>
+                    </div>
+                    <div class="play" id="Island">
+                        <button style="position: relative; left: 2rem;" type="button"
+                            class="btn btn-success" (click)="reproducir6()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar6()">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> The Lightning </i></span></p>
+                    </div>
+                    <div class="play" id="The_Lightning">
+                        <button class="btn btn-success" style="position: relative;left: 0.5rem;"
+                            type="button" (click)="reproducir7()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar7()">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p> Canción:<span> <i> The Perception</i></span></p>
+                    </div>
+                    <div class="play" id="The_Perception">
+                        <button style="position: relative; left: 0.2rem;" type="button"
+                            class="btn btn-success" (click)="reproducir5()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar5()">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> Nuclear Wave </i></span></p>
+                    </div>
+                    <div class="play" id="Nuclear_Wave">
+                        <button style="position: relative; left: 0.5rem;" type="button"
+                            class="btn btn-success" (click)="reproducir8()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar8()">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> Working Class Hero (John Lennon) </i></span></p>
+                    </div>
+                    <div class="play" id="Working_Class_Hero">
+                        <button style="position: relative; right: 3.5rem;" type="button"
+                            class="btn btn-success" (click)="reproducir9()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar9()">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <section>
+            <h3>Visita nuestras Redes Sociales</h3>
+            <div class="redes">
+                <a href="https://www.facebook.com/MilkWookieRockBand/" target="_blank"> <i
+                        class="fab fa-facebook-f m-4 fa-3x"></i> </a>
+                <a href="https://open.spotify.com/album/3KTiykX3PXilOQi2d4c9V1?si=XHUTP63uQqKIfFgznODN8A&utm_source=copy-link&dl_branch=1"
+                    target="_blank"> <i class="fab fa-spotify fa-3x"></i> </a>
+                <a href="https://www.youtube.com/channel/UCeQBxbt2GdYwvhGkYS_jSVA" target="_blank">
+                    <i class="fab fa-youtube m-4 fa-3x "></i></a>
+                <a href="https://www.instagram.com/milkwookierock/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="contenedor container-fluid">
+        <h2 class="titulo2 container-fluid"> Biografía
+        </h2>
+        <article>
+            <p class="txtAsoc container-fluid">Avería es una banda de rock en español, con
+                influencias de Fito y Fitipaldis, M-Clan,
+                Leño, Extremoduro, Los Zigarros, etc.
+                El grupo tiene su origen en el dúo acústico "Cajón desastre", al cual pertenecía
+                Daniel
+                Guerrero, junto a Francisco Calo. Este dúo, comenzó a finales de 2014 a tocar juntos
+                y
+                componer canciones. En los siguientes dos años Daniel y Calo grabaron dos maquetas,
+                a
+                la par que daban varios conciertos por Benalmádena, incluso fuera de la localidad.
+                Tras la marcha de Calo, a finales de 2017, Daniel empieza a recuperar algunas
+                canciones de "Cajón Desastre", adaptadas a un estilo más rock and roll, junto con su
+                hermano Juan Luis a la batería, a la par que empiezan a crear nuevas composiciones.
+                Tras unos meses de ensayo, con varios músicos y arreglo de canciones, los hermanos
+                Guerrero conocen a Esteban Somosierra (Bajo) y Vidal Fernández (Teclados), con los
+                cuales se produce una conexión musical especial y muy buen rollo a la hora de
+                ensayar,
+                dar ideas y crear temas nuevos.
+                Gracias a tener esta formación completa y en equilibrio, deciden empezar a dar el
+                salto a
+                los escenarios para la primavera-verano de 2019. El 24 de junio de 2019 dieron su
+                primer concierto en la Feria de Arroyo de la Miel..
+                Después de varios conciertos, la banda se centró en grabar algunos temas para poder
+                dar
+                un salto más. Grabaron su primer EP "Whisky dinamita", en noviembre de 2019 con
+                cuatro temas, en los estudios "Artesonao" de los montes de Málaga. En los siguientes
+                meses el EP se subió a plataformas digitales como Spotify y se publicó su primer
+                videoclip en YouTube.
+                Su single "Hipnosis Social" se incluyó en el CD recopilatorio de "Rock Machine" de
+                2020, junto con más de una decena de grupos del panorama nacional.
+                Actualmente, el grupo está componiendo y desarrollando temas nuevos, a la par que se
+                prepara para dar futuros conciertos. </p>
+
+        </article>
+        <br><br>
+        <div class="banda">
+            <ul>
+                <h4>Componentes:</h4>
+                <li>Guitarra y voz: Daniel Guerrero Rivero <i class="fas fa-guitar fa-2x m-2"></i>
+                </li>
+                <li>Batería: Juan Luis Guerrero Rivero <i class="fas fa-drum fa-2x m-2"></i></li>
+                <li>Bajo y coros: Esteban Somosierra Fernández <img class="bajo"
+                        src="https://img.icons8.com/ios/50/000000/guitar-strings.png" /></li>
+                <li>Teclados y coros: Vidal Fernández Garrido <img class="piano"
+                        src="https://img.icons8.com/ios-filled/50/000000/piano.png" /></li>
+            </ul>
+            <img class="foto" src="../../../assets/logo/AVERIA4.jpg" alt="">
+        </div>
+        <br><br>
+        <h2>Escucha la música de Avería</h2>
+        <br>
+        <div class="reproductor container">
+
+            <h3>EP Oficial: <i> Whisky Dinamita </i></h3>
+            <div class="lista_canciones">
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> Hipnosis Social</i></span></p>
+                    </div>
+                    <div class="play" id="Hipnosis_Social">
+                        <button type="button" class="btn btn-success" (click)="reproducir2()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar2()">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> Oli </i></span></p>
+                    </div>
+                    <div class="play" id="Oli">
+                        <button class="btn btn-success" style="position: relative;left: 2.5rem;"
+                            type="button" (click)="reproducir()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar()">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p> Canción:<span> <i> Whisky Dinamita</i></span></p>
+                    </div>
+                    <div class="play" id="Whisky_Dinamita">
+                        <button style="position: relative; right: 0.2rem;" type="button"
+                            class="btn btn-success" (click)="reproducir3()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar3()">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="cancion">
+                    <div class="titulo">
+                        <p>Canción:<span> <i> El Reverso de un Verso </i></span></p>
+                    </div>
+
+                    <div class="play" id="El_Reverso_de_un_Verso">
+                        <button style="position: relative; right: 1.5rem;" type="button"
+                            class="btn btn-success" (click)="reproducir4()">
+                            <i class="fas fa-play"></i>
+                        </button>
+                    </div>
+                    <div class="stop">
+                        <button type="button" class="btn btn-danger" (click)="parar4()">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <section>
+            <h3>Visita nuestras Redes Sociales</h3>
+            <div class="redes">
+                <a href="https://m.facebook.com/averiarockbandaoficial/" target="_blank"> <i
+                        class="fab fa-facebook-f m-4 fa-3x"></i> </a>
+                <a href="https://open.spotify.com/artist/1T4xOFyaVL0C6PlEGBCbuD" target="_blank"> <i
+                        class="fab fa-spotify fa-3x"></i> </a>
+                <a href="https://www.youtube.com/channel/UCZpNzgHEHDGr3KNVLUp41Iw" target="_blank">
+                    <i class="fab fa-youtube m-4 fa-3x "></i></a>
+                <a href="https://www.instagram.com/ambsolymusica/" target="_blank"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>

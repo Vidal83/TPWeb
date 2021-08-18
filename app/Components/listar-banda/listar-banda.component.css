@@ -1,0 +1,31 @@
+body {
+  background: #f7971e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffd200,
+    #f7971e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.fas {
+  cursor: pointer;
+  margin-left: 8px;
+}
+span {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+  color: azure;
+}
+@media (max-width: 1000px) {
+  .crear {
+    position: relative;
+    left: 10vw;
+  }
+}

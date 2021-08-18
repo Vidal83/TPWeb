@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="principal">
+
+        <div class="navbar navbar navbar-expand-lg navbar-light bg-light">
+            <a href="/inicio"> <img src="./assets/logo/logo.png" alt=""></a>
+            <ul class="menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/nosotros">Nosotros</a></li>
+                <li><a href="/bandas">Nuestras Bandas</a></li>
+                <li><a href="/eventos">Eventos</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Admin
+                    </a>
+                    <form [formGroup]="miForm" (ngSubmit)="guardar()" class="dropdown-menu"
+                        aria-labelledby="navbarDropdown" action="">
+                        <ul>
+                            <li><input type="password" name="passwordUser"
+                                    formControlName="passwordUser" placeholder="Contraseña">
+                            </li>
+                            <button type="submit" [disabled]="!miForm.valid"
+                                class="btn btn-warning m-3">Enviar</button>
+                        </ul>
+                    </form>
+                </li>
+            </ul>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle m-1" type="button"
+                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menú
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light">
+                    <li><a class="dropdown-item" href="/">Inicio</a>
+                    </li>
+                    <li><a class="dropdown-item" href="/nosotros">Nosotros</a></li>
+                    <li><a class="dropdown-item" href="/bandas">Nuestras Bandas</a></li>
+                    <li><a class="dropdown-item" href="eventos">Eventos</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Admin
+                        </a>
+                        <form [formGroup]="miForm" (ngSubmit)="guardar()" class="dropdown-menu"
+                            aria-labelledby="navbarDropdown" action="">
+                            <ul>
+                                <li><input type="password" name="passwordUser"
+                                        formControlName="passwordUser" placeholder="Contraseña">
+                                </li>
+
+                                <button type="submit" [disabled]="!miForm.valid"
+                                    class="btn btn-warning m-3">Enviar</button>
+                            </ul>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>
